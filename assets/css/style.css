@@ -1,22 +1,28 @@
+/*--------------------------------------------------------------
+# Cabeçalho
+--------------------------------------------------------------*/
 .cabecalho {
     display: flex;
     justify-content: flex-end;
     padding: .5rem;
-    background-color: blue;
 }
 
 .cabecalho__imagem {
     width: 170px;
 }
 
-.evento {
-    padding-top: 1rem;
-}
-
+/*--------------------------------------------------------------
+# Seção Evento
+--------------------------------------------------------------*/
 .evento__imagem {
     width: 100vw;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
 }
 
+/*--------------------------------------------------------------
+# Seção Input CPF
+--------------------------------------------------------------*/
 .campo-cpf {
     display: flex;
     flex-direction: column;
@@ -39,6 +45,9 @@
     margin-bottom: 1rem;
 }
 
+/*--------------------------------------------------------------
+# Seção dos Botões
+--------------------------------------------------------------*/
 .botoes__container {
     display: flex;
     align-items: center;
@@ -58,6 +67,13 @@
     font-family: 'Open sans', sans-serif;
     font-size: 2.3rem;
     font-weight: 300;
+    box-shadow: 0 0 .1em rgb(43, 43, 43);
+}
+
+.botoes__botao:active {
+    background-color: rgb(43, 43, 43);
+    transition: .25s;
+    color: aliceblue;
 }
 
 .botoes__finais {
@@ -75,4 +91,17 @@
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
+    box-shadow: 0 0 .1em rgb(43, 43, 43);
+}
+
+.botoes__botao--apagar:active {
+    background-color: rgb(43, 43, 43);
+    transition: .25s;
+    color: aliceblue;
+}
+
+.botoes__botao--enviar:active {
+    background-color: rgb(43, 43, 43);
+    transition: .25s;
+    color: aliceblue;
 }

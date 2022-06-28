@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Arquivos CSS -->
     <link rel="stylesheet" href="./assets//css/reset.css">
     <link rel="stylesheet" href="./assets//css/style.css">
+
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700">
 </head>
 <body>
+
+    <!-- ======= Cabeçalho ======= -->
     <header class="cabecalho">
         <img src="./assets/img/logotipo.png" alt="Logotipo da ..." class="cabecalho__imagem">
     </header>
 
+    <!-- ======= Seção Evento ======= -->
     <section class="evento">
         <img src="./assets/img/imagem-evento.jpg" alt="" class="evento__imagem">
     </section>
 
+    <!-- ======= Seção Input CPF ======= -->
     <section class="campo-cpf">
         <p class="campo-cpf__texto">Entre com seu CPF:</p>
-        <input class="campo-cpf__tela" id="Exemplo" type="text" readonly value="">
-    </section>
+        <input type="text" name="cpf" readonly value="" class="campo-cpf__tela" id="Exemplo">
+    </section> 
 
+    <!-- ======= Seção dos Botões ======= -->
     <section class="botoes">
         <div class="botoes__container">
             <button class="botoes__botao" id="botao-1" type="button">1</button>
@@ -36,11 +45,13 @@
             <button class="botoes__botao" id="botao-9" type="button">9</button>
         </div>
         <div class="botoes__finais">
-            <button class="botoes__botao--apagar" type="reset">Apagar</button>
+            <button class="botoes__botao--apagar" id="botao-apagar" type="button">Apagar</button>
             <button class="botoes__botao" id="botao-0" type="button">0</button>
-            <button class="botoes__botao--enviar" type="submit">Enviar</button>
+            <button class="botoes__botao--enviar" name="cpf" type="submit">Enviar</button>
         </div>
     </section>
+
+    <!-- ======= Import Script ======= -->
     <script src="./main.js"></script>
 </body>
 </html>

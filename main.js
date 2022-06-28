@@ -9,7 +9,6 @@ const botao7 = document.querySelector('#botao-7')
 const botao8 = document.querySelector('#botao-8')
 const botao9 = document.querySelector('#botao-9')
 
-
 var input = document.querySelector('#Exemplo')
 
 botao0.addEventListener("click", () => {
@@ -50,4 +49,10 @@ botao8.addEventListener("click", () => {
 
 botao9.addEventListener("click", () => {
     input.value += '9'
+})
+
+const botaoDel = document.querySelector('#botao-apagar')
+
+botaoDel.addEventListener("click", () => {
+    input.value = null
 })
