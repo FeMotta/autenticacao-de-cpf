@@ -1,3 +1,79 @@
+body {
+    background-color: rgba(221, 238, 252, 1);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7rem 0 0;
+}
+
+.login__titulo {
+    font-family: "Nunito", open-sans;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.79);
+    margin-bottom: 1rem;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input, select {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.form input::placeholder {
+    color: gray;
+}
+
+select:invalid {
+    color: gray;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #1a1a1a;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    background: rgba(221, 238, 252, 1);
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: rgb(199, 226, 249);
+    transition: .30s;
+    color: #1a1a1a;
+}
+
+/* ====== Tela CPF ====== */
+
 /*--------------------------------------------------------------
 # Cabeçalho
 --------------------------------------------------------------*/
@@ -17,7 +93,6 @@
 .evento__imagem {
     width: 100vw;
     padding-bottom: 10px;
-    border-bottom: 1px solid #000;
 }
 
 /*--------------------------------------------------------------
@@ -40,7 +115,9 @@
 .campo-cpf__tela {
     border: 2px solid #000;
     border-radius: 10px;
-    width: 505px;
+    min-width: 491px;
+    max-width: 500px;
+    width: 60vw;
     height: 54px;
     margin-bottom: 1rem;
 }
@@ -74,19 +151,13 @@
     font-size: 2.3rem;
     font-weight: 300;
     box-shadow: 0 0 .1em rgb(43, 43, 43);
+    background: linear-gradient(230.23deg, #E7E7E7 9.13%, rgba(255, 255, 255, 0.72) 85.8%);
 }
 
 .botoes__botao:active {
     background-color: rgb(43, 43, 43);
     transition: .25s;
-    color: aliceblue;
 }
-
-/* .botoes__finais {
-    display: flex;
-    margin: 0 20%;
-    justify-content: space-between;
-} */
 
 .botoes__botao--apagar, .botoes__botao--enviar {
     width: 153px;
@@ -98,12 +169,12 @@
     font-weight: 300;
     font-size: 1.4rem;
     box-shadow: 0 0 .1em rgb(43, 43, 43);
+    background: linear-gradient(230.23deg, #E7E7E7 9.13%, rgba(255, 255, 255, 0.72) 85.8%);
 }
 
 .botoes__botao--apagar:active {
     background-color: rgb(43, 43, 43);
     transition: .25s;
-    color: aliceblue;
 }
 
 .botoes__botao--enviar:active {
