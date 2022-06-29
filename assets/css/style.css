@@ -1,5 +1,5 @@
-body {
-    background-color: rgba(221, 238, 252, 1);
+.background-color__checkin {
+    background-color: #EFF1F4;
 }
 
 .login {
@@ -64,11 +64,11 @@ select:invalid {
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
-    background: rgba(221, 238, 252, 1);
+    background: #8D99AE;
 }
-.form button:hover,.form button:active,.form button:focus {
-    background: rgb(199, 226, 249);
-    transition: .30s;
+.form button:hover {
+    background: #73829C;
+    transition: .50s;
     color: #1a1a1a;
 }
 
@@ -79,8 +79,18 @@ select:invalid {
 --------------------------------------------------------------*/
 .cabecalho {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
     padding: .5rem;
+}
+
+.cabecalho__nome-evento {
+    font-family: "Open sans", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .cabecalho__imagem {
@@ -92,7 +102,6 @@ select:invalid {
 --------------------------------------------------------------*/
 .evento__imagem {
     width: 100vw;
-    padding-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -113,8 +122,8 @@ select:invalid {
 }
 
 .campo-cpf__tela {
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: none;
+    border-bottom: 1.5px solid #757575;
     min-width: 491px;
     max-width: 500px;
     width: 60vw;
@@ -146,18 +155,17 @@ select:invalid {
     width: 98px;
     height: 97px;
     border: 0;
-    border: 1px solid #000;
     border-radius: 100px;
     padding: 10px 24px;
     font-family: 'Open sans', sans-serif;
     font-size: 2.3rem;
     font-weight: 300;
-    box-shadow: 0 0 .1em rgb(43, 43, 43);
-    background: linear-gradient(230.23deg, #E7E7E7 9.13%, rgba(255, 255, 255, 0.72) 85.8%);
+    background: #8D99AE;
+    box-shadow: 0px 0px 4px rgba(141, 153, 174, 0.63), 0px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .botoes__botao:active {
-    background-color: rgb(43, 43, 43);
+    background-color: #73829C;
     transition: .25s;
 }
 
@@ -165,22 +173,26 @@ select:invalid {
     width: 153px;
     height: 75px;
     border: 0;
-    border: 1px solid #000;
     border-radius: 100px;
+    margin-top: calc(48px - 37px);
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
-    box-shadow: 0 0 .1em rgb(43, 43, 43);
-    background: linear-gradient(230.23deg, #E7E7E7 9.13%, rgba(255, 255, 255, 0.72) 85.8%);
+    background: #8D99AE;
+    box-shadow: 0px 0px 4px rgba(141, 153, 174, 0.63), 0px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
-.botoes__botao--apagar:active {
-    background-color: rgb(43, 43, 43);
+.botoes__botao--apagar:active, .botoes__botao--enviar:active {
+    background-color: #73829C;
     transition: .25s;
+}
+
+.botoes__botao--enviar {
+    background-color: #38414F;
+    color: #EFF1F4;
 }
 
 .botoes__botao--enviar:active {
-    background-color: rgb(43, 43, 43);
+    background-color: #424B5C;
     transition: .25s;
-    color: aliceblue;
 }
