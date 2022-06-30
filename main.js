@@ -56,3 +56,7 @@ const botaoDel = document.querySelector('#botao-apagar')
 botaoDel.addEventListener("click", () => {
     input.value = null
 })
+
+function redirecionaIndex() {
+    window.location.replace("https://femotta.github.io/autenticacao-de-cpf/")
+}
