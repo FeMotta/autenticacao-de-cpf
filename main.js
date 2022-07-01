@@ -60,3 +60,20 @@ botaoDel.addEventListener("click", () => {
 function redirecionaIndex() {
     window.location.replace("https://femotta.github.io/autenticacao-de-cpf/")
 }
+
+const botaoPopUp = document.querySelector('.botoes__botao--enviar')
+const popup = document.querySelector('.pop-up__container')
+
+const video = document.querySelector('.area-video')
+
+botaoPopUp.addEventListener('click', () => {
+    popup.style.display = 'block'
+    navigator.mediaDevices.getUserMedia({video:true}).then(stream => {
+        video.srcObject = stream;
+        video.play
+    }).catch()
+})
+
+popup.addEventListener('click', () => {
+    popup.style.display = 'none'
+})
