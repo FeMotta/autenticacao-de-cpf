@@ -102,6 +102,7 @@ select:invalid {
 --------------------------------------------------------------*/
 .evento__imagem {
     width: 100vw;
+    height: 35vh;
 }
 
 /*--------------------------------------------------------------
@@ -111,7 +112,6 @@ select:invalid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
 }
 
 .campo-cpf__texto {
@@ -119,18 +119,25 @@ select:invalid {
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
     padding-bottom: .7rem;
+    padding-top: 3rem;
 }
 
 .campo-cpf__tela {
     border: none;
-    border-bottom: 1.5px solid #757575;
     min-width: 491px;
     max-width: 500px;
     width: 60vw;
     height: 54px;
     margin-bottom: 1rem;
     font-family: 'Open-sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 .2em rgb(43, 43, 43);
+    background-color: #EFF1F4;
+    opacity: 0.7;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 3rem;
 }
 
 /*--------------------------------------------------------------
@@ -147,41 +154,45 @@ select:invalid {
 .botoes__container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    gap: 1rem;
+    gap: 1.5rem;
+    column-gap: 4rem;
     justify-items: center;
+    margin-top: 2rem;
 }
 
 .botoes__botao {
     width: 98px;
     height: 97px;
-    border: 0;
     border-radius: 100px;
     padding: 10px 24px;
     font-family: 'Open sans', sans-serif;
     font-size: 2.3rem;
     font-weight: 300;
-    box-shadow: 0 0 .1em rgb(43, 43, 43);
-    background: linear-gradient(230.23deg, #E7E7E7 9.13%, rgba(255, 255, 255, 0.72) 85.8%);
+    box-shadow: 0 0 .2em rgb(43, 43, 43);
+    opacity: 0.7;
 }
 
 .botoes__botao--apagar, .botoes__botao--enviar {
-    width: 153px;
-    height: 75px;
-    border: 0;
+    width: 98px;
+    height: 97px;
     border-radius: 100px;
-    margin-top: calc(48px - 37px);
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
-    box-shadow: 0 0 .1em rgb(43, 43, 43);
-    background: linear-gradient(230.23deg, #E7E7E7 9.13%, rgba(255, 255, 255, 0.72) 85.8%);
+    box-shadow: 0 0 .2em rgb(43, 43, 43);
+    opacity: 0.7;
 }
 
 .botoes__botao:active, .botoes__botao--apagar:active, .botoes__botao--enviar:active {
-    background-color: rgb(43, 43, 43);
+    opacity: 1;
     transition: .25s;
+    color: rgb(43, 43, 43);
 }
 
 .botoes__botao:hover, .botoes__botao--apagar:hover, .botoes__botao--enviar:hover {
     cursor: pointer;
+}
+
+.input-background {
+    background-image: linear-gradient(0deg, rgb(44, 108, 188) 0%, rgb(113, 195, 247) 50%, rgb(246, 246, 246) 100%);
 }
