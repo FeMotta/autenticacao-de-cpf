@@ -96,11 +96,3 @@ botaoTiraFoto.addEventListener('click', () => {
     downloadImagem.style.display = 'none'
     console.log(linkImagem)
 })
-
-//--------------------------------------------------------------
-// A Corrigir
-//--------------------------------------------------------------
-
-// saida.addEventListener('click', () => {
-//     popup.style.display = 'none'
-// })
