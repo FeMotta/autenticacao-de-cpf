@@ -218,20 +218,53 @@ select:invalid {
     background: #EFF1F4;
     position: relative;
     width: 75vw;
-    height: 75vh;
+    height: auto;
     margin: 10% auto;
     padding: 20px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 20px;
+    max-width: 520px;
+}
+
+.pop-up__sair {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: #1a1a1a;
 }
 
 .pop-up__conteudo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .area-video {
-    max-width: 536px;
-    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.botao__foto {
+    position: relative;
+    margin-top: 2rem;
+    background: #8D99AE;
+    width: 100%;
+    max-width: 480px;
+    height: 3rem;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.area-canva {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 480px;
+    max-height: 400px;
+    border-radius: 10px;
 }
